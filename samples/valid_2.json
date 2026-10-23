@@ -1,0 +1,10 @@
+{
+  "pregnancies": 1,
+  "glucose": 85,
+  "blood_pressure": 66,
+  "skin_thickness": 29,
+  "insulin": 0,
+  "bmi": 26.6,
+  "diabetes_pedigree_function": 0.351,
+  "age": 31
+}

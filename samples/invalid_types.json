@@ -1,0 +1,9 @@
+{
+  "pregnancies": "two",
+  "glucose": "high",
+  "blood_pressure": 70,
+  "skin_thickness": 20,
+  "insulin": 80,
+  "bmi": 31.2,
+  "age": 40
+}

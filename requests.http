@@ -1,0 +1,63 @@
+@host = http://127.0.0.1:8000
+
+GET {{host}}/health
+
+###
+
+POST {{host}}/predict
+Content-Type: application/json
+
+{
+  "pregnancies": 6,
+  "glucose": 148,
+  "blood_pressure": 72,
+  "skin_thickness": 35,
+  "insulin": 0,
+  "bmi": 33.6,
+  "diabetes_pedigree_function": 0.627,
+  "age": 50
+}
+
+###
+
+POST {{host}}/predict
+Content-Type: application/json
+
+{
+  "pregnancies": 1,
+  "glucose": 85,
+  "blood_pressure": 66,
+  "skin_thickness": 29,
+  "insulin": 0,
+  "bmi": 26.6,
+  "diabetes_pedigree_function": 0.351,
+  "age": 31
+}
+
+###
+
+POST {{host}}/predict
+Content-Type: application/json
+
+{
+  "pregnancies": 2,
+  "glucose": 520,
+  "blood_pressure": 70,
+  "skin_thickness": 20,
+  "insulin": 80,
+  "bmi": 31.2,
+  "diabetes_pedigree_function": 0.4,
+  "age": 15
+}
+
+###
+
+GET {{host}}/audit?limit=10
+
+###
+
+GET {{host}}/audit?status=failure
+
+###
+
+GET {{host}}/audit/summary
